@@ -1,4 +1,4 @@
-# Blocky
+# LBL
 
 Simple tool to generate code comment blocks like below:
 
