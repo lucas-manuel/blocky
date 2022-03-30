@@ -8,7 +8,3 @@ homepage = "https://github.com/lucas-manuel/blocky"
 repository = "https://github.com/lucas-manuel/blocky"
 keywords = ["cli", "search", "demo"]
 categories = ["command-line-utilities"]
-
-[dependencies]
-read_input = "0.8"
-clap = { version = "3.0", features = ["derive"] }
