@@ -1,13 +1,11 @@
-use read_input::prelude::*;
-
 fn main() {
-    let input = input::<String>().get();
+    let input = std::env::args().nth(1).expect("NO INPUT GIVEN");
 
     let mut block = String::from("/");
     let subblock_left = String::from("/*** ");
     let subblock_right = String::from(" ***/");
 
-    for i in 0..(input.len() + 8) {
+    for _i in 0..(input.len() + 8) {
         block.push_str(&"*".to_string());
     }
 
