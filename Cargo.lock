@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "blocky"
+name = "lbl"
 version = "0.1.1"
