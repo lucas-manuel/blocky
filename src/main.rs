@@ -4,16 +4,14 @@ fn main() {
     let input = input::<String>().get();
 
     let mut block = String::from("/");
-    let mut whitespace = String::from("");
-    let subblock = String::from("///");
+    let subblock_left = String::from("/*** ");
+    let subblock_right = String::from(" ***/");
 
-    for i in 0..input.len() {
-        whitespace.push_str("  ");
+    for i in 0..(input.len() + 8) {
+        block.push_str(&"*".to_string());
     }
 
-    for i in 0..(whitespace.len() * 2) + input.len() + 5 { 
-        block.push_str(&"/".to_string());
-    }
-    
-    println!("{0}\n{1}{2}{3}{4}{5}\n{6}", block, subblock, whitespace, input, whitespace, subblock, block);
+    block.push_str(&"/".to_string());
+
+    println!("{0}\n{1}{2}{3}\n{4}", block, subblock_left, input, subblock_right, block);
 }
