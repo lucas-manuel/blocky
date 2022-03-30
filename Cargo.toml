@@ -2,7 +2,7 @@
 name = "blocky"
 version = "0.1.1"
 authors = ["Lucas Manuel <lucas@maple.finance>"]
-license = "MIT OR Apache-2.0"
+license = "GNU Affero General Public License v3.0"
 description = "A tool to build section labels"
 readme = "README.md"
 homepage = "https://github.com/lucas-manuel/blocky"
